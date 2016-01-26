@@ -13,7 +13,7 @@
 </head>
 
 <body ng-app="myApp" ng-controller="appcontroller">
-
+<div class="container">
       <div class="col-xs-9" style=padding-top:25px>
         <div class="form-group">
         			<input type="text" class="form-control"  ng-model="list" ng-keyup="pressEnter()"  placeholder="To Do things">
@@ -21,19 +21,17 @@
       </div>
 
     <div class="col-xs-3" style=padding-top:25px>
-					<a class="btn btn-primary btn-block" ng-click="addTask()"">
+					 <button class="btn btn-primary btn-block" ng-click="addTask()"">
 						<span>Add</span>
 					</a>
       </div>
-
+</div>
 
 
 <!--Display list--->
 <ul ng-repeat="item in taskslist track by $index" style="clear:both">
     <li>{{item}}</li>
 </ul>
-
-
 
 </body>
 </html>
