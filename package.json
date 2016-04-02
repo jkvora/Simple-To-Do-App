@@ -1,0 +1,30 @@
+{
+  "name": "Simple-To-Do-App",
+  "version": "1.0.0",
+  "description": "A Sample MEAN App to learn how things work  ",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jkvora/Simple-To-Do-App.git"
+  },
+  "engines":{
+    "node":"0.10.40"
+  },
+  "keywords": [
+    "MEAN",
+    "App"
+  ],
+  "author": "Jalak Vora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jkvora/Simple-To-Do-App/issues"
+  },
+  "homepage": "https://github.com/jkvora/Simple-To-Do-App",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}

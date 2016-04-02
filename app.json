@@ -1,0 +1,8 @@
+{
+  "name": "MEAN application",
+  "description": "A MEAN app to learn how it works",
+  "repository":"https://github.com/jkvora/Simple-To-Do-App",
+  "logo": "https://mlab.com/company/brand/resources/mLab-logo-onlight.png",
+  "keywords": ["node", "express", "angular", "MEAN", "mongodb", "API"],
+  "addons": ["mongolab"]
+}
