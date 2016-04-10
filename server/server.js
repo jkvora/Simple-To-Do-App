@@ -1,6 +1,7 @@
 //Require Modules
 var express=require("express");
 var config = require('./config');
+var path = require('path');
 var routes=require('./routes');
 
 //Init Express App
@@ -8,7 +9,10 @@ var app=express();
 
 
 /*Use Middleware (Between header to hTTP actions)*/
-app.use('/',routes);
+
+
+// serve the static public files
+app.use(express.static(path.join(__dirname, '../public')));
 
 
 //Listen TO Port mentioned in config file

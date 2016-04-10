@@ -1,0 +1,33 @@
+{
+  "name": "Simple-To-Do-App",
+  "description": "A Sample MEAN App to learn how things work",
+  "main": "server/server.js",
+  "authors": [
+    "Jalak Vora"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "MEAN",
+    "App"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-animate": "^1.5.3",
+    "angular-messages": "^1.5.3",
+    "angular-resource": "^1.5.3",
+    "angular-ui-router": "^0.2.18",
+    "angular-material": "^1.0.7"
+  }
+}
