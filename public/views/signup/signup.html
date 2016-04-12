@@ -1,1 +1,31 @@
-<h2>Signup Page</h2>
+<md-content layout-margin class="center-form">
+  <section class="md-whiteframe-7dp" flex>
+      <div flex layout="column" layout-padding layout-margin>
+        <form method="post" ng-submit="signup()" name="signupForm" layout="column">
+
+          <md-input-container>
+            <label>Name</label>
+            <input ng-model="user.name" name="username" required autofocus>
+          </md-input-container>
+
+          <md-input-container>
+            <label>Email</label>
+            <input ng-model="user.email" type="email" ng-pattern="/^[A-z]+[a-z0-9._]+@[a-z]+.[a-z.]{2,5}$/" required>
+          </md-input-container>
+
+          <md-input-container>
+            <label>Password</label>
+            <input ng-model="user.password" name="password" type="password" pw-check="confirmPassword" required>
+          </md-input-container>
+
+          <md-input-container>
+            <label>Confirm Password</label>
+              <input ng-model="user.confirmPassword" name="confirmPassword" type="password" ui-validate=" '$value==user.password' "
+                        ui-validate-watch=" 'user.password' " required>
+          </md-input-container>
+
+            <md-button type="submit" ng-disabled="signupForm.$invalid" class="md-raised md-primary">Sign up</md-button>
+        </form>
+      </div>
+  </section>
+</md-content>

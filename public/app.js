@@ -1,4 +1,4 @@
-var app=angular.module('myApp', ['ngMaterial','ui.router']);
+var app=angular.module('myApp', ['ngMaterial','ui.router','ui.validate']);
 
 app.config(function($stateProvider, $urlRouterProvider){
   //Login State
