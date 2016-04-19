@@ -4,14 +4,14 @@ app.config(function($stateProvider, $urlRouterProvider){
   //Login State
   $stateProvider.state('login', {
     url: '/login',
-    templateUrl:"views/login/login.html",
+    templateUrl:"components/login/login.html",
     controller:'LoginCtrl'
   });
 
   //Signup State
   $stateProvider.state('signup', {
     url: "/signup",
-    templateUrl: "views/signup/signup.html",
+    templateUrl: "components/signup/signup.html",
     controller:'SignupCtrl'
   });
 
