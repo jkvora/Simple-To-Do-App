@@ -11,8 +11,8 @@
     "type": "git",
     "url": "https://github.com/jkvora/Simple-To-Do-App.git"
   },
-  "engines":{
-    "node":"0.10.40"
+  "engines": {
+    "node": "0.10.40"
   },
   "keywords": [
     "MEAN",
@@ -25,6 +25,13 @@
   },
   "homepage": "https://github.com/jkvora/Simple-To-Do-App",
   "dependencies": {
-    "express": "^4.13.4"
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "mongoose": "^4.4.12",
+    "multer": "^1.1.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
   }
 }

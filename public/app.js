@@ -5,12 +5,14 @@ app.config(function($stateProvider, $urlRouterProvider){
   $stateProvider.state('login', {
     url: '/login',
     templateUrl:"views/login/login.html",
+    controller:'LoginCtrl'
   });
 
   //Signup State
   $stateProvider.state('signup', {
     url: "/signup",
     templateUrl: "views/signup/signup.html",
+    controller:'SignupCtrl'
   });
 
   //Home
@@ -18,5 +20,6 @@ app.config(function($stateProvider, $urlRouterProvider){
     url: '/',
   });
 
+  //Otherwise
   $urlRouterProvider.otherwise('/');
 })

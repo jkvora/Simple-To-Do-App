@@ -1,1 +1,19 @@
-<h2>Login Page</h2>
+<md-content layout-margin class="center-form">
+  <section class="md-whiteframe-7dp" flex>
+      <div flex layout="column" layout-padding layout-margin>
+        <form method="post" name="loginForm" layout="column">
+
+          <md-input-container>
+            <label>Email</label>
+            <input ng-model="user.email" id="user" type="email" ng-pattern="/^[A-z]+[a-z0-9._]+@[a-z]+.[a-z.]{2,5}$/" required>
+          </md-input-container>
+
+          <md-input-container>
+            <label>Password</label>
+            <input ng-model="user.password" id="password" name="password" type="password"  required>
+          </md-input-container>
+
+            <md-button type="submit" ng-disabled="loginForm.$invalid" ng-click="login(user)" class="md-raised md-primary">Login</md-button>
+        </form>
+      </div>
+  </section>
